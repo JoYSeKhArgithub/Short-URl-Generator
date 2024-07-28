@@ -81,10 +81,10 @@ function Link() {
         <span className="text-6xl font-extrabold hover:underline cursor-pointer">
           {url?.title}
         </span>
-        <a href={`https://hashbold.com/${link}`}
+        <a href={`https://num32.netlify.app/${link}`}
          target="_blank"
         className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
-        >https://hashbold.com/{link}</a>
+        >https://num32.netlify.app/{link}</a>
         <a
             href={url?.original_url}
             target="_blank"
@@ -100,7 +100,7 @@ function Link() {
             <Button
               variant="ghost"
               onClick={() =>
-                navigator.clipboard.writeText(`https://hashbold.com/${link}`)
+                navigator.clipboard.writeText(`https://num32.netlify.app/${link}`)
               }
             >
               <Copy />

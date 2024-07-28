@@ -26,7 +26,7 @@ const RedirectLink = () => {
     if (!loading && data) {
       fnStats();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [loading]);
 
   if (loading || loadingStats) {

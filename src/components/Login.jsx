@@ -55,7 +55,6 @@ function Login() {
                 .required("Password is required"),
             })
             await schema.validate(formData,{abortEarly: false});
-            //api call 
             await fnLogin();
         } catch (e) {
             const newErrors = {};

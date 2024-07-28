@@ -39,7 +39,7 @@ function LandingPage() {
       <Button type="submit" className="h-full" variant="destructive">Shortener</Button>
       </form>
       <img
-        src="/file.jpg" // replace with 2 in small screen
+        src="/file.jpg" 
         className="w-full my-11 md:px-11"
       />
         <Accordion type="multiple" collapsible className="w-full md:px-11">

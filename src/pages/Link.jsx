@@ -19,18 +19,18 @@ function Link() {
     const imageUrl = url?.qr;
     const fileName = url?.title;
 
-    // Create an anchor element
+    
     const anchor = document.createElement("a");
     anchor.href = imageUrl;
     anchor.download = fileName;
 
-    // Append the anchor to the body
+   
     document.body.appendChild(anchor);
 
-    // Trigger the download by simulating a click event
+    
     anchor.click();
 
-    // Remove the anchor from the document
+   
     document.body.removeChild(anchor);
   };
 
@@ -81,10 +81,10 @@ function Link() {
         <span className="text-6xl font-extrabold hover:underline cursor-pointer">
           {url?.title}
         </span>
-        <a href={`https://hashbold.in/${link}`}
+        <a href={`https://hashbold.com/${link}`}
          target="_blank"
         className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
-        >https://hashbold.in/{link}</a>
+        >https://hashbold.com/{link}</a>
         <a
             href={url?.original_url}
             target="_blank"
@@ -100,7 +100,7 @@ function Link() {
             <Button
               variant="ghost"
               onClick={() =>
-                navigator.clipboard.writeText(`https://hashbold.in/${link}`)
+                navigator.clipboard.writeText(`https://hashbold.com/${link}`)
               }
             >
               <Copy />

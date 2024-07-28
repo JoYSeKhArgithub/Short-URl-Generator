@@ -115,7 +115,7 @@ export function CreateLink() {
          />
         {error.longUrl && <Error message={error.longUrl} />}
         <div className="flex items-center gap-2">
-          <Card className="p-2">hashbold.in</Card>/
+          <Card className="p-2">hashbold.com</Card>/
           <Input
             id="customUrl"
             placeholder="Custom Link (optional)"
